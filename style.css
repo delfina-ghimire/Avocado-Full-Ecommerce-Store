@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 /*Initial Global setting */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Spartan", sans-serif;
+  font-family: "Josefin Slab", serif;
 }
 
 h1 {
@@ -40,4 +42,74 @@ p {
 
 body {
   width: 100%;
+}
+
+/* Navbar */
+
+#header {
+  /* to align items in one row */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* visual styling */
+  padding: 20px 80px;
+  background: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+  /* to align all the contents of list in one row */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  /* to remove bullet points from the list */
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  /* to remove the underline from the text */
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  /* add transition during color change while hovering */
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #c7365f;
+}
+#navbar li a.active::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 2px;
+  background-color: #c7365f;
+  left: 20px;
+  bottom: -2px;
+}
+
+/* adding underline in navbar element while active and hovered */
+
+#navbar li a:not(.active)::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background-color: #c7365f;
+  left: 0;
+  bottom: 0;
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+
+#navbar li a:hover:not(.active)::after {
+  transform: scale(1, 1);
 }

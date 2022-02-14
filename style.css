@@ -9,25 +9,25 @@
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 70px;
   line-height: 64px;
   color: #222;
 }
 
 h2 {
-  font-size: 46px;
+  font-size: 66px;
   line-height: 54px;
   color: #222;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 40px;
 
   color: #222;
 }
 
 p {
-  font-size: 16px;
+  font-size: 24px;
   margin: 15px 0 20px 0;
   color: #465b52;
 }
@@ -55,6 +55,11 @@ body {
   padding: 20px 80px;
   background: #e3e6f3;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  /* to make navbar stick on top */
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
 }
 
 #navbar {
@@ -112,4 +117,44 @@ body {
 
 #navbar li a:hover:not(.active)::after {
   transform: scale(1, 1);
+}
+
+/* Hero section */
+#hero {
+  background-image: url("img/hero4.png");
+  /* make image full screen */
+  height: 90vh;
+  width: 100%;
+  /* to center the image */
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  /* to center the texts */
+  display: flex;
+  flex-direction: column; /*because flex direction is row by default */
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* styling texts */
+#hero h4 {
+  padding-bottom: 20px;
+}
+
+#hero h1 {
+  color: #c7365f;
+  padding-bottom: 10px;
+}
+
+/* styling button */
+#hero button {
+  background-image: url(/img/button.png);
+  background-color: transparent;
+  color: #c7365f;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 24px;
 }

@@ -148,6 +148,8 @@ body {
 
 /* styling button */
 #hero button {
+  font-weight: 700;
+  font-size: 24px;
   background-image: url(/img/button.png);
   background-color: transparent;
   color: #c7365f;
@@ -155,6 +157,52 @@ body {
   padding: 14px 80px 14px 65px;
   background-repeat: no-repeat;
   cursor: pointer;
-  font-weight: 700;
-  font-size: 24px;
+}
+
+/*styling features section*/
+#features {
+  /* to add all features items in a single row */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#features .fe-box {
+  width: 180px;
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  text-align: center;
+  padding: 25px 15px;
+  margin: 15px 0;
+}
+
+#features .fe-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#features .fe-box img {
+  /* to make image responsive */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#features .fe-box h6 {
+  display: inline-block;
+  font-size: 18px;
+  padding: 9px 8px 6px 8px;
+  color: #088178;
+  background-color: #fddde4;
+  line-height: 1;
+}
+#features .fe-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+#features .fe-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+#features .fe-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+#features .fe-box:nth-child(6) h6 {
+  background-color: #fff2c5;
 }

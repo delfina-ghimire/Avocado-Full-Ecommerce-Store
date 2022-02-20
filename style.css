@@ -44,6 +44,24 @@ body {
   width: 100%;
 }
 
+button.normal {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.normal:hover {
+  background-color: #c7365f;
+  color: #fff;
+}
+
 /* Navbar */
 
 #header {
@@ -284,4 +302,35 @@ body {
   bottom: 20px;
   right: 10px;
   color: rgb(199, 54, 95);
+}
+/* Call to Action Section */
+#action-banner {
+  /* to center the elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("/img/banner/b2.jpg");
+  /* resizing image */
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#action-banner h4 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#action-banner h2 {
+  color: #fff;
+  font-size: 56px;
+  padding: 10px 0;
+}
+
+#action-banner h2 span {
+  color: #ef3636;
 }

@@ -62,6 +62,19 @@ button.normal:hover {
   color: #fff;
 }
 
+button.clear {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: none;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
 /* Navbar */
 
 #header {
@@ -333,4 +346,152 @@ button.normal:hover {
 
 #action-banner h2 span {
   color: #ef3636;
+}
+
+/* Blog Section */
+#blog {
+  /* to get both the banner in same row */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#blog .sm-banner {
+  /* to center the elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  background-image: url("/img/banner/b17.jpg");
+  /* resizing image */
+  min-width: 600px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#blog .sm-banner h2 {
+  color: #fff;
+  font-size: 44px;
+}
+
+#blog .sm-banner h4 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+#blog .sm-banner p {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#blog .sm-banner:hover button.clear {
+  color: #fff;
+  background-color: #d44d74;
+  border: 1px solid #d44d74;
+}
+
+#blog .sm-banner-2 {
+  background-image: url(/img/banner/b10.jpg);
+}
+
+/* small text banner */
+#text-banner-xs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#text-banner-xs .sm-banner {
+  /* to center the elements */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-image: url("/img/banner/b7.jpg");
+  /* resizing image */
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#text-banner-xs .sm-banner h4 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#text-banner-xs .sm-banner h3 {
+  color: #ec544e;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#text-banner-xs .xs-banner-2 {
+  background-image: url("/img/banner/b4.jpg");
+}
+
+#text-banner-xs .xs-banner-3 {
+  background-image: url("/img/banner/b18.jpg");
+}
+
+/* Newsletter Section */
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(/img/banner/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+
+#newsletter h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #818ea0;
+}
+
+#newsletter h4 span {
+  color: #ffbd27;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25rem;
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: none;
+  outline: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#newsletter button {
+  background-color: #c7365f;
+  color: #fff;
+  white-space: nowrap;
+  padding: 0 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }

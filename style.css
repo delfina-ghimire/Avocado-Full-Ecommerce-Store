@@ -107,6 +107,11 @@ button.clear {
   position: relative;
 }
 
+.hamburger {
+  display: none;
+  align-items: center;
+}
+
 #navbar li a {
   /* to remove the underline from the text */
   text-decoration: none;
@@ -148,6 +153,10 @@ button.clear {
 
 #navbar li a:hover:not(.active)::after {
   transform: scale(1, 1);
+}
+
+#close {
+  display: none;
 }
 
 /* Hero section */
@@ -654,4 +663,131 @@ footer .f-info_row-last .copyright {
 footer .f-info_row-last .copyright p {
   color: #fff;
   font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* to add fixed position */
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    /* other styles */
+    background-color: #e3e6f3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 120px 0 0 10px;
+    transition: 0.3s;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger i {
+    color: #1a1a1a;
+    font-size: 30px;
+    padding-left: 20px;
+  }
+
+  #navbar.show-navbar {
+    right: 0;
+  }
+
+  #close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    color: #222;
+    font-size: 30px;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #features {
+    justify-content: center;
+  }
+
+  /* to add space between feature box */
+  #features .fe-box {
+    margin: 15px 15px;
+  }
+
+  #products .product-container {
+    justify-content: center;
+  }
+
+  #products .product-container .product-item {
+    margin: 15px;
+  }
+
+  #action-banner {
+    height: 25vh;
+  }
+  #action-banner h2 {
+    font-size: 46px;
+    padding: 10px 0;
+  }
+  #blog .sm-banner {
+    min-width: 100%;
+    height: 30vh;
+  }
+
+  #text-banner-xs {
+    padding: 0 40px;
+  }
+
+  #text-banner-xs .sm-banner {
+    width: 28%;
+  }
+
+  #newsletter .form {
+    padding-top: 10px;
+    width: 70%;
+  }
+
+  footer .f-info_row .f-logo {
+    display: none;
+  }
+
+  footer .payment img {
+    padding-top: 20px;
+  }
+
+  footer .footer-feature h4 {
+    font-size: 16px;
+  }
+
+  .sm-des-social-media {
+    padding-bottom: 10px;
+  }
+
+  footer .f-info_row-last .policies {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
 }

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/c21157dcdc.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
   <title>Something:full ecommerce website.</title>
 </head>
 
@@ -25,9 +24,15 @@
         <li><a href="About.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li>
-          <a href="shop.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="shop.html"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i></a>
         </li>
+        <a href="#"><i id="close" class="fa-solid fa-xmark"></i></a>
       </ul>
+    </div>
+    <div class="hamburger">
+      <a href="shop.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <i id="bar" class="fa-solid fa-outdent"></i>
+
     </div>
   </section>
   <!-- hero -->
@@ -483,8 +488,8 @@
         <img src="/img/features/ff4.svg" alt="">
         <h4>Easy Returns</h4>
       </div>
-      <div class="footer-feature">
-        <h4><span>Show us some 💗<br>
+      <div class="footer-feature ">
+        <h4 class="sm-des-social-media"><span>Show us some 💗<br>
             on Social Media</span></h4>
         <div class="social-media-icons">
           <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
@@ -509,5 +514,6 @@
     </div>
   </Footer>
 </body>
+<script src="script.js"></script>
 
 </html>

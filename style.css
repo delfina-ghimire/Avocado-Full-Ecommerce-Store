@@ -771,6 +771,77 @@ footer .f-info_row-last .copyright p {
 }
 
 /* Single products page ends */
+/* Blog page Starts */
+#page-header.blog-header {
+  background-image: url(/img/banner/b19.jpg);
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 110px;
+}
+
+#blog .blog-img {
+  width: 50%;
+  margin-right: 40px;
+}
+
+#blog .blog-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#blog .blog-details {
+  width: 50%;
+}
+
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 21px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+}
+
+#blog .blog-details a::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 13px;
+  right: -60px;
+}
+
+#blog .blog-details a:hover {
+  color: rgb(199, 54, 95);
+}
+
+#blog .blog-details a:hover::after {
+  background-color: #c7365f;
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-size: 100px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -2;
+}
+
+/* Blog page ends */
+/* Blog page Starts */
+/* Blog page ends */
 
 /* Media Queries */
 @media (max-width: 799px) {
@@ -898,7 +969,17 @@ footer .f-info_row-last .copyright p {
     padding-bottom: 10px;
   }
 
-  /*Single product*/
+  /*Blog page*/
+  #blog .blog-box {
+    padding-bottom: 90px;
+  }
+
+  #blog .blog-box h1 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    font-size: 90px;
+  }
 }
 
 @media (max-width: 477px) {
@@ -1000,5 +1081,33 @@ footer .f-info_row-last .copyright p {
 
   #pro-details .pro-text {
     width: 100%;
+  }
+
+  /* Blog page */
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  #blog .blog-details {
+    width: 100%;
+  }
+
+  #blog .blog-box h1 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 80px;
   }
 }

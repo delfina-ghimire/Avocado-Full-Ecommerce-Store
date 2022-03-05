@@ -840,6 +840,61 @@ footer .f-info_row-last .copyright p {
 }
 
 /* Blog page ends */
+/* About page Starts */
+#page-header.about-header {
+  background-image: url(/img/about/banner.png);
+}
+
+#about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-us img {
+  width: 50%;
+  height: auto;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+#about-us .about-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-us .about-details p {
+  padding: 20px 30px;
+}
+
+#about-us .about-details button {
+  background-color: #c7365f;
+  color: #fff;
+}
+
+#about-us .about-details button:hover {
+  background-color: #c9cbce;
+  color: #000;
+}
+
+#app-download {
+  text-align: center;
+}
+
+#app-download .video {
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+#app-download .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* About page ends */
 /* Blog page Starts */
 /* Blog page ends */
 
@@ -979,6 +1034,22 @@ footer .f-info_row-last .copyright p {
     top: 60px;
     left: 0;
     font-size: 90px;
+  }
+
+  /*about us page*/
+  #about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #about-us img {
+    margin-bottom: 20px;
+  }
+
+  #page-header {
+    height: 30vh;
   }
 }
 

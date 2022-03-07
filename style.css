@@ -954,6 +954,14 @@ footer .f-info_row-last .copyright p {
 }
 
 /* Contact Form */
+#form{
+display: flex;
+justify-content: space-between;
+margin: 10px;
+padding: 80px;
+border: 1px solid #e1e1e1;
+}
+
 #form .contact-form{
   width: 50%;
   padding-top: 20px;
@@ -1021,7 +1029,31 @@ font-size: 22px;
   color: #c7365f;
 }
 
+/* Members Section */
+#form .people div{
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
 
+#form .people div img{
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+#form .people div p{
+  margin: 0;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#form .people div span{
+  display: block;
+  font-weight: 600;
+  color: #000
+}
 
 
 
@@ -1185,6 +1217,33 @@ font-size: 22px;
   #page-header {
     height: 30vh;
   }
+
+
+
+  /*Contact Us Page*/
+    #form {
+    display: flex;
+   flex-direction: column;
+}
+
+  #contact-details {
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: space-between; */
+    /* margin: 60px 0; */
+}
+
+#form .contact-form {
+    width: 100%;
+    padding-top: 20px;
+}
+
+#form .people{
+  display: none;
+}
+
+
 }
 
 @media (max-width: 477px) {
@@ -1314,5 +1373,10 @@ font-size: 22px;
     top: -40px;
     left: 0;
     font-size: 80px;
+  }
+
+  /* Contact Us */
+  #form{
+    padding: 10px;
   }
 }

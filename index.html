@@ -15,7 +15,6 @@
   <!-- navbar -->
   <section id="header">
     <a href="index.html"> <img src="img/logo.png" alt="Avacado clothing" /></a>
-
     <div>
       <ul id="navbar">
         <li><a class="active" href="index.html">Home</a></li>
@@ -24,7 +23,8 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li>
-          <a href="shop.html"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i></a>
+          <a href="cart.html"><i id="lg-bag" class="fa-solid fa-cart-shopping"></i></a>
+          <div>0</div>
         </li>
         <a href="#"><i id="close" class="fa-solid fa-xmark"></i></a>
       </ul>
@@ -70,7 +70,7 @@
       <h6>Free Shipping</h6>
     </div>
   </section>
-  <!-- Featured Products section -->
+  <!--  Products section -->
   <section id="products" class="section-p1">
     <div class="product-section_title">
       <h2>Featured Products</h2>
@@ -207,6 +207,36 @@
       </div>
     </div>
   </section>
+
+  <!-- Shopping Cart Section -->
+  <section id="side-cart">
+    <div class="cart-overlay">
+      <div class="side-cart">
+        <span class="close-cart"><i class="fa-solid fa-xmark"></i></span>
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+          <!-- cart-item  -->
+          <div class="cart-item">
+            <img src="./img/products/f1.jpg" alt="">
+            <div>
+              <h4>Queen Bed</h4>
+              <h5>$19.00</h5>
+              <span class="remove-item">remove-item</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-chevron-up"></i>
+              <p class="item-amount">$0</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="cart-footer">
+            <h3>Total <span>$0</span> </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Call to action banner -->
   <section id="action-banner" class=".section-m1">

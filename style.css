@@ -8,6 +8,10 @@
   font-family: "Josefin Slab", serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-size: 70px;
   line-height: 64px;
@@ -127,13 +131,13 @@ button.clear {
   color: #c7365f;
 }
 #navbar li a.active::after {
-  content: "";
+   content: "";
   position: absolute;
-  width: 60%;
+  width: 40%;
   height: 2px;
   background-color: #c7365f;
-  left: 20px;
-  bottom: -2px;
+  left: 16px;
+  bottom: -6px;
 }
 
 /* adding underline in navbar element while active and hovered */
@@ -141,11 +145,11 @@ button.clear {
 #navbar li a:not(.active)::after {
   content: "";
   position: absolute;
-  width: 80%;
+  width: 40%;
   height: 2px;
   background-color: #c7365f;
-  left: 0;
-  bottom: 0;
+  left: 16px;
+  bottom: -6px;
   transform: scale(0, 1);
   transform-origin: 0% 100%;
   transition: transform 0.3s ease;
@@ -157,6 +161,26 @@ button.clear {
 
 #close {
   display: none;
+}
+
+#navbar > li:nth-child(6) > a{
+  font-size: 25px;
+}
+
+#navbar > li:nth-child(6){
+  position: relative;
+}
+
+#navbar > li:nth-child(6) > div{
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  background-color: #c7365f;
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font: 8px;
+  font-weight: 700;
 }
 
 /* Hero section */
@@ -176,7 +200,7 @@ button.clear {
   justify-content: center;
 }
 
-/* styling texts */
+/* styling hero texts */
 #hero h4 {
   padding-bottom: 20px;
 }
@@ -186,7 +210,7 @@ button.clear {
   padding-bottom: 10px;
 }
 
-/* styling button */
+/* styling hero button */
 #hero button {
   font-weight: 700;
   font-size: 24px;
@@ -1056,14 +1080,114 @@ font-size: 22px;
 }
 
 
-
-
-
-
-
 /* About Us Page ends */
-/* Blog page Starts */
-/* Blog page ends */
+/* Shopping cart Starts */
+/* Cart  */
+#side-cart .cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;;
+  /* background: rgba(199, 54, 95, 0.5); */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  /* visibility: hidden; */
+}
+#side-cart .side-cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 3000;
+  background: rgb(231, 226, 221);
+  padding: 1.5rem;
+  transition: all 0.3s linear;
+  /* transform: translateX(100%); */
+}
+#side-cart .showCart {
+  transform: translateX(0);
+}
+ #side-cart .transparentBcg {
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  #side-cart .side-cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+#side-cart .close-cart {
+  font-size: 1.7rem;
+  cursor: pointer;
+  color:#000;
+}
+#side-cart .side-cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing:0.1rem;
+  margin-bottom: 2rem;
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 1px solid #606063;
+}
+/*---------- Cart Item -------------------- */
+#side-cart .cart-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+#side-cart .cart-item img {
+  width: 75px;
+  height: 75px;
+}
+#side-cart .cart-item h4 {
+  font-size: 22px;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+#side-cart .cart-item h5 {
+  margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
+  font-size: 22px;
+  color: #222; ;
+}
+#side-cart .item-amount {
+  text-align: center;
+}
+#side-cart .remove-item {
+  color: #ef3636;
+  cursor: pointer;
+  font-size: 20px;
+}
+#side-cart .fa-chevron-up,
+#side-cart .fa-chevron-down {
+  color: #c7365f;
+  cursor: pointer;
+}
+/* End of Cart Item  */
+
+#side-cart .cart-footer {
+  margin-top: 2rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+#side-cart .cart-footer h3 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+
+/* End of Cart  */
+/* Shopping cart ends */
+
 /* Media Queries */
 @media (max-width: 799px) {
   .section-p1 {

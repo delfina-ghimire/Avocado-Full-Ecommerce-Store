@@ -61,19 +61,6 @@ Check out how it looks:
 
 ![Signup page Screenshot](./img/preview/shop.png)
 
-![Login Page Screenshot](./img/preview/blogpage.png)
-
-</div>
-
-<div>
-
-![Signup page Screenshot](./img/preview/about-page.png)
-
-![Login Page Screenshot](./img/preview/contact.png)
-
-</div>
-
-
 
 
 <a id='local'/>

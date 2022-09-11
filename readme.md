@@ -1,19 +1,5 @@
-<h1 align=center>
-<img src="./frontend/src/img/header-preview.png"/>
-</h1>
 
-<div align="center">
-
-![Mongoose](https://img.shields.io/badge/Mongoose-%5E6.5.1-orange) 
-![Node_Badge](https://img.shields.io/badge/npm-8.8.0-red)
-![Npm_Badge](https://img.shields.io/badge/node-18.1.0-green)
-![React Badge](https://img.shields.io/badge/react-%5E18.2.0-blue)
-![React_DOM](https://img.shields.io/badge/reactDOM-%5E18.2.0-9cf)
-![Express](https://img.shields.io/badge/Express-%22%5E4.18.1-lightgrey)
-![MERN app](https://img.shields.io/badge/Stack-MERN-yellowgreen)
-</div>
-
-# FriendsBook : Social Media Platform
+# Avocado Ecommerce site
 ## Index
 
 - [About](#about)
@@ -30,27 +16,13 @@
 
  ## :information_source: About
 
-FriendsBook is the Modern UX/UI  Social media site with: <br/>
-
-- User Authentication
-- CRUD operation for User
-- Fetching timeline posts according to particular user followings & time
-- Likes and Dislike Functionalities
-- CRUD operation on post 
-- Request Handling
-- Complex Mongodb queries
-- Serverside Routing
-
-
-
-This project was bootstrapped using [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
-
+Avocado is the Modern UX/UI Multipage Ecommerce site. <br/>
 
 <a id='demo'/>
 
 ## :link: Demo
 
-[Click to see Live Demo](#_)
+[Click to see Live Demo](https://avocado-full-ecommerce-store.vercel.app/)
 
 
 
@@ -58,45 +30,24 @@ This project was bootstrapped using [create-react-app](https://reactjs.org/docs/
 
 ## :hammer: Built With
 
-This project was developed using the following technologies:
+This project was developed only using:
 
-### **Frontend** <sub><sup>React</sup></sub>
-  - [React](https://reactjs.org/)
-  - [CSS](https://www.w3schools.com/css/)
-  - [Axios](https://axios-http.com/docs/intro)
-  - [ReactDOM](https://reactjs.org/docs/react-dom.html)
-  - [Redux](https://react-redux.js.org/)
-  - [Redux Thunk](https://redux.js.org/usage/writing-logic-thunks)
+  - HTMl
+  - CSS
+  - Javascript
 
-
-  ### **Backend** <sub><sup>mongodb+express+node</sup></sub>
-
-  - [Mongodb](https://www.mongodb.com/)
-  - [Express](https://expressjs.com/)
-  - [Node](https://nodejs.org/en/)
-  - [Bcrypt](https://www.npmjs.com/package/bcrypt)
-  - [Body Parser](https://www.npmjs.com/package/body-parser)
-  - [Cors](https://www.npmjs.com/package/cors)
-  - [dotenv](https://www.npmjs.com/package/dotenv)
-  - [Nodemon](https://www.npmjs.com/package/nodemon)
-  - [Multer](https://www.npmjs.com/package/multer)
-  - [Mongoose](https://mongoosejs.com/)
-  
 
 <a id='features'/>
 
 ## :fire: Salient Features
 
-- Request Handling
-- Complex Mongodb queries
-- Serverside Routing
+- Modern Multipage website
+- Layout using CSS flexbox and grid
 - Use of Modern UX and UI
-- Tuned Multiple complex Gradients
 - soft and smooth animations
-- Reusable react functional components
-- Proper file and folder architecture 
 - Fully Responsive along all devices 
 - Cross platform
+- complex realworld footer
 
 <a id='preview'/>
 
@@ -104,11 +55,25 @@ This project was developed using the following technologies:
 
 Check out how it looks:
 
-![App Screenshot](./frontend/src/img/app-preview.png)
+![homepage](./img/preview/homepage.png)
 
-![Signup page Screenshot](./frontend/src/img/signup-preview.png)
+<div>
 
-![Login Page Screenshot](./frontend//src/img/login-preview.png)
+![Signup page Screenshot](./img/preview/shop.png)
+
+![Login Page Screenshot](./img/preview/blogpage.png)
+
+</div>
+
+<div>
+
+![Signup page Screenshot](./img/preview/about-page.png)
+
+![Login Page Screenshot](./img/preview/contact.png)
+
+</div>
+
+
 
 
 <a id='local'/>
@@ -118,35 +83,19 @@ Check out how it looks:
 Clone the project
 
 ```bash
-  git clone https://github.com/clair-daisies/social-media-app.git
+  git clone git@github.com:clair-daisies/Avocado-Full-Ecommerce-Store.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd social-media-app
-```
-
-Install dependencies
-
-```bash
-  social-media-app/frontend
-  yarn install
-
-  social-media-app/backend
-  npm install
-
-  
+  cd Avocado-Full-Ecommerce-website
 ```
 
 Spin up the server
 
 ```bash
-   cd social-media-app/backend
-   npm start
-
-   cd social-media-app/frontend
-   yarn start
+  serve via Live-server
 ```
 
 <a id='feedback'/>

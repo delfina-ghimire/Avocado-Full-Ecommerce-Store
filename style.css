@@ -398,7 +398,8 @@ button.clear {
   padding: 30px;
   background-image: url("/img/banner/b17.jpg");
   /* resizing image */
-  min-width: 600px;
+ 
+  max-width: 600px;
   height: 50vh;
   background-size: cover;
   background-position: center;

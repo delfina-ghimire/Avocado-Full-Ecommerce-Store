@@ -1008,6 +1008,10 @@ border: 1px solid #e1e1e1;
   flex-basis: 48%;
 }
 
+#form .contact-form h2{
+  padding-bottom: 20px;
+}
+
 #form .contact-form input,
 #form .contact-form textarea{
 width: 100%;
